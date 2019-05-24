@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SensorStreamer2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="subscriber_title">Subscribers</string>
+    <string name="subscriber_tcp">TCP</string>
+    <string name="subscriber_log">Log</string>
+
+    <string name="publisher_title">Publishers</string>
+    <string name="publisher_sampleTime">period (ms)</string>
+    <string name="sampleTime_hint">1000</string>
+    <string name="publisher_linearAcceleration">Linear\nAcceleration</string>
+    <string name="publisher_rotationVector">Rotation\nVector</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="ip_hint">255.255.255.255</string>
+    <string name="ip_title">IP</string>
+    <string name="port_hint">12345</string>
+    <string name="port_title">Port</string>
+    <string name="connect">Connected</string>
+    <string name="disconnect">Disconnected</string>
+</resources>
