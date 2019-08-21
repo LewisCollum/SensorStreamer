@@ -84,11 +84,39 @@
         app:layout_constraintStart_toEndOf="@id/guide_center" android:layout_marginStart="16dp"
         app:layout_constraintTop_toTopOf="@id/publisher_rotationVector"/>
 
+    <Switch android:id="@+id/publisher_acceleration"
+        android:text="@string/publisher_acceleration" android:textAlignment="textEnd"
+        android:layout_width="wrap_content" android:layout_height="@dimen/timeSample_height"
+        app:layout_constraintEnd_toStartOf="@id/guide_center" android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@id/publisher_rotationVector" android:layout_marginTop="@dimen/switch_margin"/>
+    <EditText android:id="@+id/publisher_acceleration_time"
+        android:layout_width="@dimen/timeSample_width"
+        android:layout_height="@dimen/timeSample_height"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:hint="@string/sampleTime_hint"
+        app:layout_constraintStart_toEndOf="@id/guide_center" android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/publisher_acceleration"/>
+
+    <Switch android:id="@+id/publisher_gyroscope"
+        android:text="@string/publisher_gyroscope" android:textAlignment="textEnd"
+        android:layout_width="wrap_content" android:layout_height="@dimen/timeSample_height"
+        app:layout_constraintEnd_toStartOf="@id/guide_center" android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@id/publisher_acceleration" android:layout_marginTop="@dimen/switch_margin"/>
+    <EditText android:id="@+id/publisher_gyroscope_time"
+        android:layout_width="@dimen/timeSample_width"
+        android:layout_height="@dimen/timeSample_height"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:hint="@string/sampleTime_hint"
+        app:layout_constraintStart_toEndOf="@id/guide_center" android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@id/publisher_gyroscope"/>
+
 
 
     <View style="@style/Divider" android:id="@+id/horizontal_3"
         android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/publisher_rotationVector" android:layout_marginTop="@dimen/switch_margin"
+        app:layout_constraintTop_toBottomOf="@+id/publisher_gyroscope" android:layout_marginTop="@dimen/switch_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
 
@@ -129,14 +157,6 @@
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/port" app:layout_constraintBottom_toBottomOf="@id/port"
         app:layout_constraintEnd_toStartOf="@id/port" android:layout_marginEnd="8dp"/>
-
-    <Switch android:id="@+id/connect"
-        android:textOn="@string/connect"
-        android:textOff="@string/disconnect"
-        android:layout_width="wrap_content" android:layout_height="@dimen/timeSample_height"
-        app:layout_constraintEnd_toStartOf="@+id/guide_center" android:layout_marginEnd="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/port" android:layout_marginTop="@dimen/switch_margin"/>
-
 
 
     <android.support.constraint.Guideline

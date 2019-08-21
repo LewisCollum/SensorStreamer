@@ -13,6 +13,8 @@
     <string name="sampleTime_hint">1000</string>
     <string name="publisher_linearAcceleration">Linear\nAcceleration</string>
     <string name="publisher_rotationVector">Rotation\nVector</string>
+    <string name="publisher_acceleration">Acceleration</string>
+    <string name="publisher_gyroscope">Gyroscope</string>
 
     <string name="settings_title">Settings</string>
     <string name="ip_hint">255.255.255.255</string>

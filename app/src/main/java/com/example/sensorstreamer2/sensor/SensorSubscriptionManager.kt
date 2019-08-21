@@ -11,15 +11,16 @@ object SensorSubscriptionManager {
     }
 
     fun removePublisher(lookup: SensorLookup) {
+        publishers[lookup]!!.clearSubscribers()
         publishers.remove(lookup)!!
     }
 
     fun subscribeToAllPublishers(subscriber: SampleSubscriber) {
-        publishers.forEach { (_, publisher) -> subscriber.subscribeToPublisher(publisher)}
+        publishers.forEach { (_, publisher) -> subscriber.subscribeTo(publisher)}
     }
 
     fun unsubscribeFromAllPublishers(subscriber: SampleSubscriber) {
-        publishers.forEach { (_, publisher) -> subscriber.unsubscribeFromPublisher(publisher)}
+        publishers.forEach { (_, publisher) -> subscriber.unsubscribeFrom(publisher)}
     }
 
 }
