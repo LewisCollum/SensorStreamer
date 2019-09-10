@@ -1,0 +1,4 @@
+* Application Layout
+Connect to server through IP and port, set the sampling period for sensors, start one or many sensors, and start one or many subscribers.
+
+[[https://github.com/LewisCollum/SensorStreamer/blob/master/doc/layout.png]]
