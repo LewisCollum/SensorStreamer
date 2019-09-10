@@ -43,8 +43,8 @@ class MainActivity : Activity() {
         ip = PreferencedEditText.fromPreferenceName(findViewById(R.id.ip), "ip")
 		logSwitch = findViewById<Switch>(R.id.subscriber_log)
 		tcpSwitch = findViewById(R.id.subscriber_tcp)
-		//publisherSwitches = SensorSwitchGenerator.generateList()
-		
+
+		//TODO implement publisherSwitches = SensorSwitchGenerator.generateList()
         publisherSwitches = listOf(
             SamplePublisherUi(
                 name = "linearAcceleration",
