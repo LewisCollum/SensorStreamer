@@ -13,9 +13,9 @@ class SampleWriteSubscriber(private var writer: Writer) : SampleSubscriber() {
         writer.write(message)
     }
 
-	companion object {
-		fun fromWriter(writer: Writer): SampleWriteSubscriber {
-			return SampleWriteSubscriber(writer)
-		}
-	}	
+    companion object {
+        fun fromWriter(writer: Writer): SampleWriteSubscriber {
+            return SampleWriteSubscriber(writer)
+        }
+    }   
 }
